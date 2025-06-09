@@ -4,7 +4,7 @@
 import java.util.*;
 public class friends{
     public static void main(String args[]){
-        binary(3,0,"");
+        binary(3,0,new StringBuilder(""));
 
     }
     public static int friends(int n){

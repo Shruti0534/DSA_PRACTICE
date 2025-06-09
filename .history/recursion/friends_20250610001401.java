@@ -4,7 +4,7 @@
 import java.util.*;
 public class friends{
     public static void main(String args[]){
-        binary(3,0,"");
+        System.out.println(friends(3));
 
     }
     public static int friends(int n){
@@ -16,18 +16,7 @@ public class friends{
         return friends(n-1) + (n-1)*friends(n-2);
     }
     //binary strings problem-print all binary strings of size n without consecutive ones
-    public static void  binary(int n,int lastPlace, String str){
-        //base case 
-        if(n==0){
-            System.out.println(str);
-            return ;
-        }
-        //kaam
-        binary(n-1,0,str+"0");
-        if(lastPlace==0){
-            binary(n-1,1,str+"1");
-        }
-    }
+    publec static int binary(int n,int lastPlace, StringBuilder s){
 
-    
+    }
 }
