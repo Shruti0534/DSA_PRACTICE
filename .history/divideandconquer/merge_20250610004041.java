@@ -1,0 +1,24 @@
+package divideandconquer;
+
+public class merge {
+    //O(nlogn) time complexity
+    public static void main(String[] args) {
+        int[] arr = {38, 27, 43, 3, 9, 82, 10};
+        System.out.println("Unsorted array:");
+        printArray(arr);
+        mergeSort(arr, 0, arr.length - 1);
+        System.out.println("Sorted array:");
+        printArray(arr);
+    }
+    public static void mergeSort(int[] arr, int si, int ei) {
+      if(si>=ei){
+        return;
+      }
+        //kaam
+      int mid=si +(ei-si)/2;
+      mergeSort(arr, si, mid);
+      mergeSort(arr, mid + 1, ei);
+      merge(arr, si, mid, ei);
+    }
+    public static void merge(int arr[], int si, int mid,)
+}
